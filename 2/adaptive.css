@@ -1,0 +1,463 @@
+@media (min-width: 2500px){
+	.body{
+		font-size: 12px;
+	}
+}
+@media (min-width: 3000px){
+	.body{
+		font-size: 14px;
+	}
+}
+@media (min-width: 3400px){
+	.body{
+		font-size: 16px;
+	}
+}
+@media (min-width: 3800px){
+	.body{
+		font-size: 18px;
+	}
+}
+@media (min-width: 4000px){
+	.body{
+		font-size: 20px;
+	}
+}
+@media (max-width: 1920px){
+	.body{
+		font-size: 9px;
+	}
+}
+@media (max-width: 1400px){
+	.body{
+		font-size: 8px;
+	}
+}
+@media (max-width: 1050px){
+	.body{
+		font-size: 10px;
+	}
+	.text{
+		font-size: 1.5em;
+	}
+	.wrap{
+		width: 90%;
+	}
+	.about_title,
+	.about_description,
+	.projects_title,
+	.projects_text,
+	.video_title,
+	.video_text{
+		width: 80%;
+	}
+	.about_list{
+		justify-content: space-evenly;
+	}
+	.about_item{
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	.subtitle_info{
+		margin: 0;
+		padding-top: 1.5em;
+	}
+	.standard_content{
+		width: 50%;
+	}
+	.standard_img{
+		width: 45%;
+		height: 35em;
+	}
+	.standard_list{
+		justify-content: space-around;
+	}
+	.standard_item{
+		margin: 0;
+	}
+	.services_item {
+	    width: 28em;
+	}
+	.services_img{
+		height: 26em;
+	}
+	.services_text{
+		height: 9em;
+	}
+	.projects_item{
+		width: 21em;
+		height: 21em;
+	}
+	.video_player{
+		width: 100%;
+	}
+	.footer_item{
+		width: 20em;
+	}
+}
+@media (max-width: 960px){
+	.header{
+		border: none;
+	}
+	.menu{
+		display: none;
+	}
+	.burger{
+		display: flex;
+	}
+	.main_subtitle{
+		width: 90%;
+		font-size: 4em;
+	}
+	.about_title,
+	.about_description,
+	.projects_title,
+	.projects_text,
+	.video_title,
+	.video_text{
+		width: 90%;
+	}
+	.services_item {
+	    width: 25em;
+	}
+	.services_img {
+	    height: 22em;
+	}
+	.services_text{
+		height: 9.5em;
+	}
+	.services::before{
+		height: 36em;
+	}
+	.projects_item{
+		width: 19em;
+		height: 19em;
+	}
+	.footer_item{
+		width: 24%;
+	}
+}
+@media (max-width: 860px){
+	.services_item {
+	    width: 22em;
+	}
+	.services_img {
+	    height: 20em;
+	}
+	.services_text{
+		font-size: 1.4em;
+	}
+	.projects_item{
+		width: 16em;
+		height: 16em;
+	}
+}
+@media (max-width: 790px){
+	.main_subtitle{
+		font-size: 3.5em;
+	}
+	.button{
+		font-size: 1.4em;
+	}
+	.title{
+		font-size: 2.8em;
+	}
+	.about_list{
+		justify-content: space-around;
+	}
+	.standard_list{
+		justify-content: space-between;
+	}
+	.services{
+		padding-bottom: 5em;
+	}
+	.services::before{
+		height: 22em;
+	}
+	.services_list{
+		flex-direction: column;
+		margin-top: 10em;
+		border: none;
+		padding: 0;
+	}
+	.services_item{
+		display: flex;
+		width: 100%;
+		margin-bottom: 5em;
+	}
+	.services_img{
+		width: 30em;
+		margin-right: 2em;
+		border-radius: 0.5em;
+	}
+	.services_container{
+		flex: 1;
+	}
+	.services_subtitle{
+		margin-top: 0.6em;
+	}
+	.services_text{
+		height: 6em;
+		margin-bottom: 1.4em;
+	}
+	.services_link{
+		font-size: 1.4em;
+	}
+	.footer_item_mob-hide{
+		display: none;
+	}
+	.footer_item{
+		width: 30%;
+	}
+}
+@media (max-width: 720px){
+	.main_subtitle{
+		font-weight: 600;
+		font-size: 3.2em;
+	}
+	.title{
+		font-size: 2.4em;
+	}
+	.about_list{
+		flex-wrap: wrap;
+		margin-bottom: 0;
+	}
+	.about_item{
+		margin-bottom: 3em;
+	}
+	.standard_list{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.standard_item{
+		margin: 1em 2em;
+	}
+	.services{
+		padding-top: 5em;
+	}
+	.services::before{
+		display: none;
+	}
+	.services_title{
+		color: #222;
+	}
+	.projects_list{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.projects_item{
+		width: 24em;
+		height: 24em;
+		margin: 2em;
+	}
+}
+@media (max-width: 630px){
+	.projects_item{
+		width: 20em;
+		height: 20em;
+	}
+}
+@media (max-width: 570px) {
+	.standard_info{
+		flex-direction: column-reverse;
+		align-items: flex-start;
+	}
+	.standard_content{
+		width: 100%;
+	}
+	.standard_img{
+		width: 80%;
+		height: 25em;
+		margin-bottom: 3em;
+		border-radius: 1em;
+	}
+	.standard_text{
+		margin-top: 1em;
+	}
+	.standard_list{
+		margin-top: 5em;
+		padding: 4em 0;
+	}
+	.services_title-wrap{
+		flex-wrap: wrap;r
+	}
+	.services_title{
+		width: 100%;
+		margin-bottom: 1em;
+	}
+	.services_list{
+		margin-top: 5em;
+	}
+	.services_img{
+		width: 22em;
+		height: 18em;
+	}
+	.services_subtitle{
+		margin: 0 0 1em;
+	}
+	.projects{
+		padding: 6em 0;
+	}
+	.projects_item{
+		width: 18em;
+		height: 18em;
+		margin: 1em;
+	}
+	.video{
+		padding-top: 5em;
+	}
+	.video_title{
+		margin-bottom: 0.4em;
+	}
+	.video_text{
+		margin-bottom: 2.2em;
+	}
+	.video_player{
+		height: 28em;
+	}
+	.video_wrap{
+		padding-bottom: 4em;
+	}
+	.video::before{
+		height: 52em;
+	}
+	.subscribe{
+		padding-bottom: 5em;
+	}
+	.footer_item_mob-hide2{
+		display: none;
+	}
+	.footer_item{
+		width: 47%;
+	}
+	.main_title{
+		font-size: 1.4em;
+	}
+	.main_subtitle{
+		font-size: 2.8em;
+	}
+	.burger{
+		font-size: 0.8em;
+	}
+	.subscribe_form{
+		width: 42em;
+	}
+	.subscribe_button{
+		font-size: 1.4em;
+	}
+}
+@media (max-width: 570px) and (orientation: portrait){
+	.main_subtitle{
+		font-size: 3.2em;
+	}
+}
+@media (max-width: 510px){
+	.about_item{
+		flex-direction: row;
+		text-align: left;
+	}
+	.subtitle_info{
+	    margin-left: 1.7em;
+    	padding-top: 4.5em;
+    	width: 25em;
+	}
+	.standard_item{
+		margin: 2em;
+	}
+}
+@media (max-width: 475px){
+	.services_link{
+		font-size: 1.2em;
+	}
+	.services_text{
+		margin-bottom: 1em;
+	}
+	.services_subtitle{
+		font-size: 1.6em;
+	}
+	.services_img{
+		width: 15em;
+		height: 14em;
+	}
+	.subscribe_form{
+		width: 100%;
+	}
+}
+@media (max-width: 450px){
+	.projects_item{
+		width: 15em;
+		height: 15em;
+	}
+	.standard_num{
+		font-size: 3em;
+	}
+	.standard_text2{
+		margin-top: 0.8em;
+	}
+	.standard_item{
+		width: 9.4em;
+		margin: 2em 1em;
+	}
+	.standard_img{
+		width: 100%;
+	}
+}
+@media (max-width: 420px){
+	.main_subtitle{
+		width: 100%;
+		font-size: 3em;
+	}
+	.title{
+		font-size: 2.2em;
+	}
+	.about_title, 
+	.about_description, 
+	.projects_title, 
+	.projects_text, 
+	.video_title, 
+	.video_text{
+		width: 100%;
+	}
+}
+@media (max-width: 390px){
+	.subtitle_info{
+		width: 20em;
+	}
+	.standard_list{
+		justify-content: space-around;
+	}
+	.services_item{
+		flex-direction: column;
+	}
+	.services_img {
+	    width: 100%;
+	    height: 20em;
+	}
+	.services_container{
+		margin-top: 3em;
+	}
+	.projects_item {
+	    width: 25em;
+	    height: 25em;
+	}
+	.footer_item_first{
+		width: 60%;
+	}
+	.footer_item_last{
+		width: 35%;
+	}
+}
+@media (max-width: 350px){
+	.subtitle_info{
+		width: auto;
+		flex: 1;
+	}
+	.footer_subtitle{
+		font-size: 1.5em;
+	}
+}
+
+
+
+

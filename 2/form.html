@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Формы</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<form action="callback.php" method="POST">
+		<!-- <p>Почта</p> -->
+		<label for="mail">Ваша почта:</label>
+		<input id="mail" type="email" name="mail" placeholder="Введите свою почту" required disabled value="test@gmail.com"><br>
+		<!-- <p>Пароль</p> -->
+		<input type="password" name="pass"  placeholder="Введите свой пароль"><br><br>
+		<p>О себе:</p>
+		<textarea name="about" class="textarea"></textarea>
+		<br>
+		<label><input type="checkbox" name="setting" value="save password" checked>Сохранить пароль</label><br>
+		<input type="checkbox" name="setting" value="incognito"> Инкогнито<br>
+		<p>Пол</p>
+		<input type="radio" name="pol" value="male"> Мужчина<br>
+		<input type="radio" name="pol" value="famale"> Женщина<br><br>
+		<select name="sign" multiple>
+		  <option value="in">Вход</option>
+		  <option value="register">Регистрация</option> 
+		</select>
+		<input type="submit" value="Вход">
+
+	</form>
+</body>
+</html>
