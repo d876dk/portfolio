@@ -102,15 +102,7 @@ body {
     white-space: nowrap;
 }
 
-.header__menu-btn::after {
-    position: absolute;
-    min-width: 100px;
-    height: 100px;
-    bottom: 0;
-    display: block;
-    right: 0;
 
-}
 
 .header__dropdown {
     transition: 0.4s ease all;
@@ -387,8 +379,6 @@ ul.slick-dots {
 }
 
 
-
-
 .video {
     height: 100%;
 }
@@ -413,7 +403,6 @@ ul.slick-dots {
 
 .footer {
     background-color: #343a40;
-    height: 30em;
     margin-top: 3em;
     color: white;
 }
@@ -465,4 +454,8 @@ ul.slick-dots {
 
 .footer__item-social {
     margin-right: 1em;
+}
+
+.footer__privacy {
+    margin-bottom: 3em;
 }
