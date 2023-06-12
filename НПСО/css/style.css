@@ -19,6 +19,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    list-style-type: none;
 }
 
 html {
@@ -36,6 +37,16 @@ body {
     margin: 0 auto;
 }
 
+.dropdown-icon {
+    background: url("../images/dropdown_arrow.png") center center no-repeat;
+    width: 12px;
+    height: 16px;
+    background-size: contain;
+    display: none;
+    margin-top: 6px;
+    margin-left: 6px;
+}
+
 /*-----------------------------------------------------------header start-------------------------------------------------------------*/
 .header {
     width: 100%;
@@ -48,27 +59,34 @@ body {
 .header__wrap {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .header__logo {
-    font-size: 4.8em;
-    width: 5em;
+    width: 24em;
     color: var(--red);
 }
 
 .header__menu {
-    margin-left: 8%;
     display: flex;
     justify-content: space-between;
     height: fit-content;
 }
 
+.header__menu .header__logo {
+    display: none;
+
+}
+
 .header__menu-item {
     position: relative;
     display: block;
-    margin-left: 1em;
     transition: 2s ease all;
 
+}
+
+.header__menu li {
+    width: fit-content;
 }
 
 .header__menu-btn {
@@ -81,17 +99,17 @@ body {
     height: 100%;
     transition: 0.4s ease all;
     border-radius: 10px;
+    white-space: nowrap;
 }
 
 .header__menu-btn::after {
     position: absolute;
-    width: 100px;
+    min-width: 100px;
     height: 100px;
     bottom: 0;
     display: block;
     right: 0;
 
-    background-color: pink;
 }
 
 .header__dropdown {
@@ -101,6 +119,7 @@ body {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
+    visibility: hidden;
     opacity: 0;
     z-index: 3;
     border-radius: 0 10px 10px 10px;
@@ -109,7 +128,8 @@ body {
 .header__dropdown-btn {
     color: white;
     z-index: 4;
-    width: 200px;
+    width: 100%;
+    min-width: 200px;
     transition: 0.4s ease all;
     font-size: 1.4em;
     padding: 10px;
@@ -129,6 +149,7 @@ body {
 }
 
 .header__menu-item:hover .header__dropdown {
+    visibility: visible;
     opacity: 1;
 }
 
@@ -170,6 +191,7 @@ body {
 /*-----------------------------------------------------------header end-------------------------------------------------------------*/
 .company {
     margin-bottom: 3em;
+    height: 100%;
 }
 
 .company__wrap {
@@ -178,9 +200,14 @@ body {
 
 }
 
+.company__item-filter {
+    border-radius: 10px !important;
+}
+
 .company__slick {
     width: 100%;
     height: 50em;
+    height: 100%;
 }
 
 .company__item {
@@ -237,7 +264,6 @@ ul.slick-dots {
 
 /*-----------------------------------------------------------main start-------------------------------------------------------------*/
 
-.main {}
 
 .main__wrap {
     height: 100%;
@@ -255,7 +281,6 @@ ul.slick-dots {
 
 .main__news-button {
     display: block;
-    width: 20%;
     text-align: center;
     margin-bottom: 1em;
     font-size: 2em;
@@ -263,6 +288,7 @@ ul.slick-dots {
     border: 2px solid var(--red);
     border-radius: 10px;
     color: black;
+    white-space: nowrap;
     transition: 0.4s ease all;
 }
 
@@ -278,7 +304,7 @@ ul.slick-dots {
 }
 
 .main__news-item:hover {
-    transform: scale(1.03);
+    transform: scale(1.03, 1.03);
 }
 
 
@@ -314,6 +340,7 @@ ul.slick-dots {
     padding-bottom: 0.3em;
     border-bottom: 2px solid var(--red);
     margin-bottom: 0.3em;
+    transition: all 0.4s ease 0s;
 }
 
 .main__news-item-text {
@@ -343,7 +370,7 @@ ul.slick-dots {
 }
 
 .main__sidebar-item:hover {
-    transform: scale(1.04);
+    transform: scale(1.04, 1.04);
 }
 
 .main__sidebar-item a {
