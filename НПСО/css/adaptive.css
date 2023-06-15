@@ -1,3 +1,10 @@
+@media (-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {
+    body {
+        font-size: 11px;
+    }
+}
+
 @media (max-width:1700px) and (min-width:1441px) {
     body {
         font-size: 9px;
@@ -237,6 +244,10 @@
         width: 20em;
     }
 
+    .header__menu-btn {
+        font-weight: 500;
+    }
+
     .header__item-subtitle {
         width: 96%;
     }
@@ -307,6 +318,12 @@
 
     .footer__item {
         margin-bottom: 2em;
+    }
+}
+
+@media (max-width:700px) {
+    .header__menu {
+        width: 100%;
     }
 }
 
